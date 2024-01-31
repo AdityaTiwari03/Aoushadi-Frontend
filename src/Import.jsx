@@ -13,7 +13,8 @@ import Payment_Gateway from "./Components/Client/Payment_Gateway/Payment_Gateway
 import Address from "./Components/Client/Address/Address";
 import Medicine from "./Components/Client/Medicines/Medicine.jsx";
 import CartCard from "./Components/Client/Cart/CartCard/CartCard.jsx";
-
+import Update_Details from "./Components/Client/Update_Details/Update_Details.jsx";
+import Update_Password from "./Components/Client/UpdatePassword/UpdateP.jsx";
 export {
   Login,
   TopBar,
@@ -30,4 +31,6 @@ export {
   Medicine,
   Address,
   CartCard,
+  Update_Details,
+  Update_Password,
 };

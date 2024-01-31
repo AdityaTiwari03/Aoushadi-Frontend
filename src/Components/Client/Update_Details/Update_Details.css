@@ -13,7 +13,6 @@
 }
 
 .User-Box {
-  padding: 5px 30px;
   background-color: white;
   border: 2px solid var(--primary-color);
   border-radius: 20px;
@@ -45,39 +44,34 @@
   flex-direction: column;
   width: 95%;
   letter-spacing: 0.5px;
-  gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 .Detail-Div {
-  display: flex;
-  width: 80%;
+  display: block;
+  width: 100%;
   color: #033b4a;
   font-size: 18px;
-  font-weight: 600;
   justify-content: space-between;
 }
 
-.Name-User,
-.Id-User {
-  width: 40%;
-  padding-bottom: 4px;
+.Name-User {
+  width: 100%;
   border-bottom: 3px solid #033b4a;
-  padding-top: 20px;
+}
+.Id-User {
+  width: 100%;
+  border-bottom: 3px solid #033b4a;
+  margin-top: 5px;
 }
 
 .Detail-User {
   display: flex;
-  width: 80%;
+  width: 100%;
   color: #033b4a;
-  font-size: 18px;
-  font-weight: 600;
-  padding-bottom: 4px;
-  margin-top: 15px;
+  margin-top: 5px;
   border-bottom: 3px solid #033b4a;
 }
 
-.Button-User {
+.Button-Users {
   display: flex;
   width: 90%;
   margin-bottom: 50px;
@@ -86,7 +80,7 @@
   align-items: center;
 }
 
-.Button-User button {
+.Button-Users button {
   background-color: #2da95c;
   color: #033b4a;
   font-size: 16px;
@@ -98,12 +92,29 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.Button-User button:hover {
+.Button-Users button:hover {
   background-color: #10847e;
   color: white;
   transform: scale(0.9);
 }
-
+.Update {
+  width: 80%;
+  display: flex;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  width: 150px;
+  font-size: large;
+  font-weight: bolder;
+}
+input {
+  color: #033b4a;
+  font-size: 18px;
+  font-weight: bold;
+}
 @media screen and (max-width: 1125px) {
   .User-Box {
     width: 60%;
@@ -116,7 +127,7 @@
   .Detail-User {
     font-size: 16px;
   }
-  .Button-User button {
+  .Button-Users button {
     font-size: 14px;
   }
 }
@@ -128,11 +139,11 @@
 }
 
 @media screen and (max-width: 581px) {
-  .Button-User {
+  .Button-Users {
     flex-direction: column;
     gap: 20px;
   }
-  .Button-User button {
+  .Button-Users button {
     width: 90%;
   }
   .User-Box {

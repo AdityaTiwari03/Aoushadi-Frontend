@@ -15,6 +15,8 @@ import {
   Payment_Gateway,
   Address,
   Medicine,
+  Update_Details,
+  Update_Password,
 } from "./Import.jsx";
 import Map from "./Components/Client/Address/MapApplied.js";
 
@@ -58,6 +60,8 @@ function App() {
                 <Route path="address" element={<Address />} />
                 <Route path="medicine" element={<Medicine />} />
                 {/* Add a default route for unmatched paths */}
+                <Route path="user/updetails" element={<Update_Details />} />
+                <Route path="user/uppassword" element={<Update_Password />} />
                 <Route path="map" element={<Map />} />
                 <Route path="*" element={<Home />} />
               </Routes>
